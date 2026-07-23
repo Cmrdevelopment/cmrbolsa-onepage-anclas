@@ -8,7 +8,6 @@ import Layout from './components/Layout'
 import ScrollToTop from './components/ScrollToTop'
 
 import Home from './pages/Home'
-import GenericPage from './pages/GenericPage'
 import LegalPage from './pages/LegalPage'
 import PorDondeEmpezar from './pages/PorDondeEmpezar'
 import SolicitudMentoria from './pages/SolicitudMentoria'
@@ -18,6 +17,9 @@ import CmrbolsaPage from './pages/internas/CmrbolsaPage'
 import ComunidadPage from './pages/internas/ComunidadPage'
 import MentoriaPage from './pages/internas/MentoriaPage'
 import SubstackPage from './pages/internas/SubstackPage'
+import EventosPage from './pages/internas/EventosPage'
+import SalaEscritaPage from './pages/internas/SalaEscritaPage'
+import LibroPage from './pages/internas/LibroPage'
 
 export default function App() {
   return (
@@ -52,12 +54,12 @@ export default function App() {
 
         <Route
           path="/sala-escrita"
-          element={<GenericPage type="sala" />}
+          element={<SalaEscritaPage />}
         />
 
         <Route
           path="/eventos"
-          element={<GenericPage type="eventos" />}
+          element={<EventosPage />}
         />
 
         <Route
@@ -67,7 +69,17 @@ export default function App() {
 
         <Route
           path="/desgranando-la-esencia-del-mercado"
-          element={<GenericPage type="libro" />}
+          element={<LibroPage />}
+        />
+
+        <Route
+          path="/mi-libro"
+          element={
+            <Navigate
+              to="/desgranando-la-esencia-del-mercado"
+              replace
+            />
+          }
         />
 
         <Route

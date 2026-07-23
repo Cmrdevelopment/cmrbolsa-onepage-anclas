@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom'
 import Placeholder from '../components/Placeholder'
+import VideoYoutube from '../components/media/VideoYoutube'
+import BunnyVideo from '../components/media/BunnyVideo'
 import TestimoniosCarousel from '../components/testimonios/TestimoniosCarousel'
 import { testimoniosDestacados } from '../data/testimonios'
 import {
@@ -126,10 +128,11 @@ export default function Home() {
             <div className="relative overflow-hidden rounded-[2.5rem] border border-white/12 bg-white/10 p-5 shadow-darkGlow backdrop-blur">
               <div className="rounded-[2rem] border border-cmr-green/30 bg-cmr-dark2/80 p-5">
                 <div className="grid gap-4">
-                  <Placeholder
-                    label="HERO_VIDEO_URL o CARLOS_IMAGE_URL"
-                    type="video"
-                    className="min-h-[320px] border-cmr-green/25 bg-cmr-dark3"
+                  <BunnyVideo
+                    libraryId="710893"
+                    videoId="10d12fe9-5956-4736-9ef1-22e4a81ecc28"
+                    title="Presentación de CMRBolsa"
+                    className="border border-cmr-green/25"
                   />
 
                   <div className="rounded-3xl bg-cmr-dark/90 p-5">
@@ -277,7 +280,13 @@ export default function Home() {
           </div>
 
           <div className="card-dark p-5 lg:-mt-80">
-            <Placeholder label="COMUNIDAD_VIDEO_URL + capturas" type="video" className="min-h-[360px]" />
+            <BunnyVideo
+              libraryId="710893"
+              videoId="c8e9a7e1-7409-4df3-9a57-7f062b186a18"
+              title="Presentación de la Comunidad PEV"
+              className="border border-white/10"
+            />
+
             <div className="mt-5 rounded-3xl bg-cmr-dark/80 p-5">
               <p className="font-display text-xl font-black">No es una sala de señales.</p>
               <p className="mt-2 text-sm leading-6 text-white/65">

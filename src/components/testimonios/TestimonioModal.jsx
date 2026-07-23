@@ -3,7 +3,9 @@ import { X } from 'lucide-react'
 
 export default function TestimonioModal({
   abierto,
+  etiqueta = 'Testimonio',
   titulo = 'Experiencia real',
+  textoCerrar = 'Cerrar ventana',
   children,
   onCerrar,
 }) {
@@ -19,7 +21,8 @@ export default function TestimonioModal({
     const overflowAnterior =
       document.body.style.overflow
 
-    document.body.style.overflow = 'hidden'
+    document.body.style.overflow =
+      'hidden'
 
     window.addEventListener(
       'keydown',
@@ -40,7 +43,10 @@ export default function TestimonioModal({
   if (!abierto) return null
 
   function cerrarDesdeFondo(event) {
-    if (event.target === event.currentTarget) {
+    if (
+      event.target ===
+      event.currentTarget
+    ) {
       onCerrar()
     }
   }
@@ -57,7 +63,7 @@ export default function TestimonioModal({
         <div className="sticky top-0 z-20 flex shrink-0 items-center justify-between gap-4 border-b border-white/10 bg-cmr-dark/96 px-4 py-4 backdrop-blur sm:px-6">
           <div className="min-w-0">
             <p className="text-xs font-extrabold uppercase tracking-[0.2em] text-cmr-green">
-              Testimonio
+              {etiqueta}
             </p>
 
             <h2 className="mt-1 truncate font-display text-xl font-black text-white sm:text-2xl">
@@ -68,7 +74,7 @@ export default function TestimonioModal({
           <button
             type="button"
             onClick={onCerrar}
-            aria-label="Cerrar testimonio"
+            aria-label={textoCerrar}
             className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-white/10 bg-white/6 text-white/72 transition hover:border-white/20 hover:bg-white/12 hover:text-white"
           >
             <X className="h-5 w-5" />

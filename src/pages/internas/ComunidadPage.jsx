@@ -15,7 +15,7 @@ import { siteConfig } from '../../data/siteConfig'
 const includes = [
   'Más de 200 vídeos organizados por niveles',
   'Reuniones semanales conmigo en directo',
-  'sala de trading escrita para comentar el mercado',
+  ' de trading escrita para comentar el mercado',
   'Formación prevista para 16-18 meses',
   'Retos, ejercicios, ejemplos y análisis',
   'Sin permanencia: entras y sales cuando quieras',
@@ -33,7 +33,7 @@ const steps = [
     icon: UsersRound,
   },
   {
-    title: 'Sigues la sala de trading',
+    title: 'Sigues la  de trading',
     text: 'Zonas, contexto, escenarios, imágenes y razonamiento. No es copiar señales.',
     icon: MessageSquareText,
   },
@@ -46,9 +46,9 @@ const steps = [
 
 const faqs = [
   {
-    question: '¿La Comunidad PEV es una sala de señales?',
+    question: '¿La Comunidad PEV es una  de señales?',
     answer:
-      'No. La sala de trading escrita sirve para entender contexto, zonas, escenarios y razonamiento. Puede haber operaciones, pero el objetivo no es copiar entradas.',
+      'No. La  de trading escrita sirve para entender contexto, zonas, escenarios y razonamiento. Puede haber operaciones, pero el objetivo no es copiar entradas.',
   },
   {
     question: '¿Puedo cancelar cuando quiera?',
@@ -61,7 +61,7 @@ const faqs = [
       'La base empieza en el intradía, porque ahí se repiten los movimientos con más frecuencia. Después esa misma lógica se puede trasladar a swing, corto, medio y largo plazo.',
   },
   {
-    question: '¿La sala de trading se puede ver en diferido?',
+    question: '¿La  de trading se puede ver en diferido?',
     answer:
       'Sí. Si no puedes estar en directo, puedes revisar comentarios, imágenes, contexto y evolución del mercado después.',
   },
@@ -81,7 +81,7 @@ export default function ComunidadPage() {
 
             <p className="mt-7 max-w-2xl text-lg font-medium leading-8 text-white/76">
               La puerta de entrada para aprender cómo trabajamos el mercado por dentro:
-              vídeos, reuniones semanales, sala de trading escrita, contexto, imágenes, dudas,
+              vídeos, reuniones semanales,  de trading escrita, contexto, imágenes, dudas,
               ejercicios y participación.
             </p>
 
@@ -142,7 +142,7 @@ export default function ComunidadPage() {
                     </p>
                     <p className="mt-2 text-sm leading-6 text-white/62">
                       Aquí irá el vídeo principal de la Comunidad PEV. Después añadiremos
-                      capturas reales de sala, reuniones y ejemplos de mercado.
+                      capturas reales de , reuniones y ejemplos de mercado.
                     </p>
                   </div>
                 </div>
@@ -162,7 +162,7 @@ export default function ComunidadPage() {
             </h2>
 
             <p className="mt-6 text-lg leading-8 text-cmr-muted">
-              La Comunidad PEV combina formación, reuniones, sala de trading escrita y seguimiento
+              La Comunidad PEV combina formación, reuniones,  de trading escrita y seguimiento
               de mercado para que no aprendas de forma desordenada ni dependas de una
               operación puntual.
             </p>
@@ -205,7 +205,7 @@ export default function ComunidadPage() {
 
             <p className="mt-6 text-lg leading-8 text-cmr-muted">
               La idea es que tengas una estructura clara: formación, reuniones,
-              sala de trading escrita y práctica. No una montaña de contenido sin saber por dónde empezar.
+               de trading escrita y práctica. No una montaña de contenido sin saber por dónde empezar.
             </p>
           </div>
 
@@ -242,36 +242,25 @@ export default function ComunidadPage() {
       <section className="bg-cmr-dark py-20 text-white">
         <div className="section-shell grid gap-12 lg:grid-cols-[.95fr_1.05fr] lg:items-center">
           <div>
-            <span className="eyebrow-dark">sala de trading escrita</span>
+            <span className="eyebrow-dark"> de trading escrita</span>
 
             <h2 className="mt-5 font-display text-4xl font-black leading-[1.05] tracking-[-0.025em] text-white sm:text-5xl">
               Mercado en directo, pero con contexto
             </h2>
 
             <p className="mt-6 text-lg leading-8 text-white/72">
-              La sala de trading escrita no está pensada para que copies una entrada. Está pensada
+              La  de trading escrita no está pensada para que copies una entrada. Está pensada
               para que veas qué zona importa, qué escenario se está formando y cuándo lo
               mejor es no tocar nada.
             </p>
 
-            <div className="mt-8 grid gap-3 sm:grid-cols-2">
-              {[
-                'Zonas y contexto',
-                'Imágenes de mercado',
-                'Comentarios escritos',
-                'Participación de alumnos',
-                'Revisión en diferido',
-                'Errores y stops también',
-              ].map((item) => (
-                <div
-                  key={item}
-                  className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 p-4"
-                >
-                  <CheckCircle2 className="h-5 w-5 text-cmr-green" />
-                  <span className="font-semibold text-white/82">{item}</span>
-                </div>
-              ))}
-            </div>
+            <Link
+              to="/sala-escrita"
+              className="btn-primary mt-8"
+            >
+              Ver cómo funciona la Sala escrita
+              <ArrowRight className="h-4 w-4" />
+            </Link>
           </div>
 
           <div className="rounded-[2rem] border border-white/10 bg-white/8 p-5 shadow-darkGlow">
@@ -279,7 +268,7 @@ export default function ComunidadPage() {
               <div className="mb-6 flex items-center gap-3 border-b border-white/10 pb-4">
                 <MessageSquareText className="h-6 w-6 text-cmr-green" />
                 <div>
-                  <p className="font-display text-xl font-black">Ejemplo de sala de trading</p>
+                  <p className="font-display text-xl font-black">Ejemplo de  de trading</p>
                   <p className="text-sm text-white/55">
                     Luego sustituimos esto por capturas reales.
                   </p>
