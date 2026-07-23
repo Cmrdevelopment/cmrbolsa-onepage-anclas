@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
 import Placeholder from '../components/Placeholder'
-import VideoYoutube from '../components/media/VideoYoutube'
 import BunnyVideo from '../components/media/BunnyVideo'
 import TestimoniosCarousel from '../components/testimonios/TestimoniosCarousel'
 import { testimoniosDestacados } from '../data/testimonios'
