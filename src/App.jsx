@@ -10,6 +10,8 @@ import {
 
 import Layout from './components/Layout'
 import ScrollToTop from './components/ScrollToTop'
+import Seo from './components/Seo'
+import DatosEstructurados from './components/DatosEstructurados'
 
 import Home from './pages/Home'
 
@@ -79,6 +81,8 @@ export default function App() {
   return (
     <Layout>
       <ScrollToTop />
+      <Seo />
+      <DatosEstructurados />
 
       <Suspense
         fallback={<CargandoPagina />}
