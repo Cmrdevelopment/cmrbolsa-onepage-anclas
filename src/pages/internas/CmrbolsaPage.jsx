@@ -88,11 +88,17 @@ export default function CmrbolsaPage() {
             <div className="pointer-events-none absolute -bottom-12 -right-10 h-56 w-56 rounded-full bg-cmr-gold/[0.14] blur-[70px]" />
 
             <div className="relative rounded-[2.5rem] border border-white/[0.16] bg-white/[0.10] p-5 shadow-darkGlow backdrop-blur-xl">
-              <Placeholder
-                label="CARLOS_IMAGE_URL_02"
-                type="image"
-                className="min-h-[360px] border-cmr-green/25 bg-cmr-dark3 sm:min-h-[420px]"
-              />
+              <div className="relative overflow-hidden rounded-[2rem] border border-cmr-green/25 bg-cmr-dark3">
+                <img
+                  src="https://res.cloudinary.com/dwbxywvdw/image/upload/f_auto/q_auto/c_limit,w_1000/v1784914913/cmrbolsa/CARLOS_IMAGE_URL_02_reduced_fk9h9f.png"
+                  alt="Carlos Martín Rodríguez, creador de CMRBolsa"
+                  className="h-[360px] w-full object-cover object-center sm:h-[420px]"
+                  loading="eager"
+                  fetchPriority="high"
+                />
+
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-cmr-dark/20 via-transparent to-transparent" />
+              </div>
 
               <div className="mt-5 rounded-[1.75rem] border border-white/[0.12] bg-black/[0.18] p-5">
                 <div className="flex items-start gap-3">
