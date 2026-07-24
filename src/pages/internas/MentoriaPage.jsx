@@ -116,10 +116,12 @@ export default function MentoriaPage() {
               </div>
 
               <div className="relative mt-5 overflow-hidden rounded-[2rem] border border-white/[0.14] bg-cmr-dark3">
-                <Placeholder
-                  label="MENTORIA_VIDEO_URL"
-                  type="video"
-                  className="min-h-[300px] border-0 bg-cmr-dark3 sm:min-h-[360px]"
+                <img
+                  src="https://res.cloudinary.com/dwbxywvdw/image/upload/f_auto/q_auto/c_limit,w_1200/v1784917287/cmrbolsa/cmrbolsa-carlos-retrato-horizontal_reduced_uzzaky.png"
+                  alt="Carlos Martín Rodríguez, responsable de la Mentoría PEV"
+                  className="h-[300px] w-full object-cover object-center sm:h-[360px]"
+                  loading="eager"
+                  fetchPriority="high"
                 />
 
                 <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-cmr-dark via-cmr-dark/[0.58] to-transparent" />
