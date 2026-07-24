@@ -1,5 +1,6 @@
 import Header from './Header'
 import Footer from './Footer'
+import BotonSubir from './BotonSubir'
 import CookieConsent from './cookies/CookieConsent'
 
 export default function Layout({
@@ -14,6 +15,8 @@ export default function Layout({
       </main>
 
       <Footer />
+
+      <BotonSubir />
 
       <CookieConsent />
     </div>

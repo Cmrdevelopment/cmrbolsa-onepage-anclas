@@ -481,6 +481,13 @@ export default function Footer() {
 
           <div className="flex flex-wrap gap-x-5 gap-y-3">
             <Link
+              to="/contacto"
+              className="transition hover:text-white"
+            >
+              Contacto
+            </Link>
+
+            <Link
               to="/aviso-legal"
               className="transition hover:text-white"
             >

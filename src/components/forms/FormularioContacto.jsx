@@ -1,7 +1,11 @@
 import {
+  useEffect,
   useState,
 } from 'react'
-import { Link } from 'react-router-dom'
+import {
+  Link,
+  useSearchParams,
+} from 'react-router-dom'
 import {
   CheckCircle2,
   LoaderCircle,
@@ -24,6 +28,12 @@ const estadoInicial = {
 }
 
 export default function FormularioContacto() {
+  const [searchParams] =
+    useSearchParams()
+
+  const motivoDesdeUrl =
+    searchParams.get('motivo')
+
   const [formulario, setFormulario] =
     useState(estadoInicial)
 
@@ -32,6 +42,27 @@ export default function FormularioContacto() {
 
   const [mensajeEstado, setMensajeEstado] =
     useState('')
+
+  useEffect(() => {
+    const motivoValido =
+      motivosContacto.some(
+        (motivo) =>
+          motivo.value === motivoDesdeUrl
+      )
+
+    if (!motivoValido) {
+      return
+    }
+
+    setFormulario((actual) => ({
+      ...actual,
+      motivo: motivoDesdeUrl,
+      otroMotivo:
+        motivoDesdeUrl === 'otro'
+          ? actual.otroMotivo
+          : '',
+    }))
+  }, [motivoDesdeUrl])
 
   const actualizarCampo = (event) => {
     const {

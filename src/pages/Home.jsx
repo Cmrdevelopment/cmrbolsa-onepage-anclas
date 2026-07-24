@@ -578,7 +578,7 @@ export default function Home() {
                 </Link>
 
                 <Link
-                  to="/eventos#avisarme"
+                  to="/contacto?motivo=eventos"
                   className="btn-secondary-dark"
                 >
                   Avisarme del próximo
