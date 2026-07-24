@@ -116,6 +116,26 @@ export default function Seo() {
       imageAlt
     )
 
+    actualizarMetaPropiedad(
+      'og:image:secure_url',
+      image
+    )
+
+    actualizarMetaPropiedad(
+      'og:image:type',
+      'image/png'
+    )
+
+    actualizarMetaPropiedad(
+      'og:image:width',
+      '1200'
+    )
+
+    actualizarMetaPropiedad(
+      'og:image:height',
+      '630'
+    )
+
     actualizarMetaNombre(
       'twitter:card',
       'summary_large_image'
@@ -134,6 +154,11 @@ export default function Seo() {
     actualizarMetaNombre(
       'twitter:image',
       image
+    )
+
+    actualizarMetaNombre(
+      'twitter:image:alt',
+      imageAlt
     )
   }, [pathname])
 

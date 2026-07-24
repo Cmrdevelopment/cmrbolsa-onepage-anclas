@@ -5,9 +5,9 @@ export const seoBase = {
   defaultDescription:
     'Aprende a entender el mercado con el método PEV: precio, estructura y volumen. Comunidad, Mentoría PEV, sala escrita, eventos y contenidos de CMRBolsa.',
   defaultImage:
-    'https://res.cloudinary.com/dwbxywvdw/image/upload/f_auto/q_auto/c_limit,w_1200/v1784795691/cmrbolsa/cmrbolsa-home-carlos-principal-reduced_nqre5p.png',
+    'https://res.cloudinary.com/dwbxywvdw/image/upload/v1784919487/cmrbolsa/cmrbolsa-imagen-social-premium_tnqe7n.png',
   defaultImageAlt:
-    'Carlos Martín Rodríguez, creador de CMRBolsa y del método PEV',
+    'CMRBolsa, formación en trading con el método PEV',
 }
 
 export const seoPaginas = {
