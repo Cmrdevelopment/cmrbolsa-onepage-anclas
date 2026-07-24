@@ -29,6 +29,10 @@ const TestimoniosPage = lazy(
   () => import('./pages/TestimoniosPage')
 )
 
+const ContactoPage = lazy(
+  () => import('./pages/ContactoPage')
+)
+
 const CmrbolsaPage = lazy(
   () => import('./pages/internas/CmrbolsaPage')
 )
@@ -118,6 +122,11 @@ export default function App() {
           <Route
             path="/testimonios"
             element={<TestimoniosPage />}
+          />
+
+          <Route
+            path="/contacto"
+            element={<ContactoPage />}
           />
 
           <Route

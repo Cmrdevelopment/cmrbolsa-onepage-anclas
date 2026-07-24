@@ -506,7 +506,7 @@ export default function Home() {
               {[
                 'Vídeo → entender → hacer y enviar gráfico',
                 'Mandas ejercicios y se corrigen',
-                'Precio → Volumen → Estructura',
+                'Reuniones: Precio → Volumen → Estructura',
                 'Plan de trading y paso progresivo a operar',
               ].map((step, index) => (
                 <div

@@ -230,6 +230,13 @@ export default function Footer() {
                 >
                   Substack
                 </Link>
+
+                <Link
+                  to="/contacto"
+                  className={linkClass}
+                >
+                  Contacto
+                </Link>
               </div>
             </div>
 
